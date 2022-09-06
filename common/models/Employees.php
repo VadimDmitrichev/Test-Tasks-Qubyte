@@ -7,7 +7,7 @@ use Yii;
 /**
  * This is the model class for table "{{%employees}}".
  *
- * @property int $empoyee_id
+ * @property int $employee_id
  * @property int $department_id
  * @property int $post_id
  * @property string $name
@@ -15,7 +15,7 @@ use Yii;
  * @property Department $department
  * @property Post $post
  */
-class Employee extends \yii\db\ActiveRecord
+class Employees extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
@@ -46,10 +46,10 @@ class Employee extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'empoyee_id' => 'Empoyee ID',
-            'department_id' => 'Department ID',
-            'post_id' => 'Post ID',
-            'name' => 'Name',
+            'employee_id' => 'ID',
+            'department_id' => 'Отдел',
+            'post_id' => 'Должность',
+            'name' => 'Сотрудник',
         ];
     }
 
@@ -75,10 +75,10 @@ class Employee extends \yii\db\ActiveRecord
 
     /**
      * {@inheritdoc}
-     * @return \common\models\query\EmployeeQuery the active query used by this AR class.
+     * @return \common\models\query\EmployeesQuery the active query used by this AR class.
      */
     public static function find()
     {
-        return new \common\models\query\EmployeeQuery(get_called_class());
+        return new \common\models\query\EmployeesQuery(get_called_class());
     }
 }

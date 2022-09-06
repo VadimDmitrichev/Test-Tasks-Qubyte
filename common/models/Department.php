@@ -39,15 +39,15 @@ class Department extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'department_id' => 'Department ID',
-            'department_title' => 'Department Title',
+            'department_id' => 'ID',
+            'department_title' => 'Название отдела',
         ];
     }
 
     /**
      * Gets query for [[Employees]].
      *
-     * @return \yii\db\ActiveQuery|\common\models\query\EmployeeQuery
+     * @return \yii\db\ActiveQuery|\common\models\query\EmployeesQuery
      */
     public function getEmployees()
     {

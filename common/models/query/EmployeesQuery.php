@@ -3,11 +3,11 @@
 namespace common\models\query;
 
 /**
- * This is the ActiveQuery class for [[\common\models\Employee]].
+ * This is the ActiveQuery class for [[\common\models\Employees]].
  *
- * @see \common\models\Employee
+ * @see \common\models\Employees
  */
-class EmployeeQuery extends \yii\db\ActiveQuery
+class EmployeesQuery extends \yii\db\ActiveQuery
 {
     /*public function active()
     {
@@ -16,7 +16,7 @@ class EmployeeQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return \common\models\Employee[]|array
+     * @return \common\models\Employees[]|array
      */
     public function all($db = null)
     {
@@ -25,7 +25,7 @@ class EmployeeQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return \common\models\Employee|array|null
+     * @return \common\models\Employees|array|null
      */
     public function one($db = null)
     {
